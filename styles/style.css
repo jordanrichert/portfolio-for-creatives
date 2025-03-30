@@ -377,7 +377,6 @@ a.nav-link-main:hover {
 
 .hero {
   width: 100%;
-  min-height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -918,10 +917,6 @@ a.nav-link-main:hover {
   .logo {
     width: 20rem;
     /* TODO: Adjust the width of the logo on large devices here. */
-  }
-
-  .hero {
-    min-height: 100vh;
   }
 
   .hero-headline-wrapper {
