@@ -4,12 +4,41 @@
   RESET
 --------------------------------------------- */
 
-body, div,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, dl, dt, dd, ol, ul, li, hr,
-fieldset, form, label, legend, th, td,
-article, aside, figure, footer, header, hgroup, menu, nav, section,
-summary, hgroup {
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+hr,
+fieldset,
+form,
+label,
+legend,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+hgroup {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,12 +49,15 @@ a:hover {
   outline: 0;
 }
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
-
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 
 /* ------------------------------------------
   BASE DEMO STYLES
@@ -47,7 +79,6 @@ section {
   width: 100%;
   height: 800px;
 }
-
 
 /* ------------------------------------------
   NAVIGATION STYLES
@@ -83,8 +114,6 @@ section {
 @media screen and (min-width: 40em) {
   .nav-collapse li {
     width: 25%;
-    *width: 24.9%; /* IE7 Hack */
-    _width: 19%; /* IE6 Hack */
   }
 }
 
@@ -120,15 +149,14 @@ section {
   }
 }
 
-
 /* ------------------------------------------
   NAV TOGGLE STYLES
 --------------------------------------------- */
 
 @font-face {
   font-family: "responsivenav";
-  src:url("../icons/responsivenav.eot");
-  src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+  src: url("../icons/responsivenav.eot");
+  src: url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
     url("../icons/responsivenav.ttf") format("truetype"),
     url("../icons/responsivenav.woff") format("woff"),
     url("../icons/responsivenav.svg#responsivenav") format("svg");
@@ -167,7 +195,6 @@ section {
   text-indent: 0;
   text-align: center;
   line-height: 55px;
-  speak: none;
   width: 100%;
   top: 0;
   left: 0;
@@ -175,5 +202,5 @@ section {
 
 .nav-toggle.active::before {
   font-size: 24px;
-  content:"x";
+  content: "x";
 }
