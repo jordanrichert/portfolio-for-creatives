@@ -4,15 +4,18 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  background: peachpuff;
   min-height: 3rem;
   align-items: center;
   justify-content: center;
-  padding: 0.2rem;
+}
+
+li.logo {
+  margin: 0;
+  line-height: 0;
 }
 
 .nav-collapse li {
-  padding: 0.2rem;
+  padding: 0.4rem;
   background: pink;
 }
 .js .nav-collapse {
@@ -61,8 +64,7 @@
 }
 
 .nav-collapse a {
-  color: #000;
-  border: 1px solid black;
+  color: #201a1a;
 }
 
 @media screen and (min-width: 40em) {
@@ -78,7 +80,10 @@
 @font-face {
   font-family: "responsivenav";
   src: url("icons/responsivenav.eot");
-  src: url("icons/responsivenav.eot?#iefix") format("embedded-opentype"), url("icons/responsivenav.ttf") format("truetype"), url("icons/responsivenav.woff") format("woff"), url("icons/responsivenav.svg#responsivenav") format("svg");
+  src: url("icons/responsivenav.eot?#iefix") format("embedded-opentype"),
+    url("icons/responsivenav.ttf") format("truetype"),
+    url("icons/responsivenav.woff") format("woff"),
+    url("icons/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -102,19 +107,13 @@
 }
 
 .nav-toggle:before {
-  color: #f4421a; /* Edit this to change the icon color */
-  font-family: "responsivenav", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  font-size: 28px;
-  text-transform: none;
+  color: #201a1a; /* Edit this to change the icon color */
+  font-family: "DM Sans", sans-serif;
+  font-size: 50px;
   position: absolute;
   content: "≡";
   text-indent: 0;
   text-align: center;
-  line-height: 55px;
-  speak: none;
   width: 100%;
   top: 0;
   left: 0;
