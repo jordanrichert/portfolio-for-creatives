@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 /*
 
@@ -80,47 +81,52 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-text-color: #222;
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Eczar", serif;
-  --project-title-typeface: "Eczar", serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --highlight-color: #ff057c;
-  --overlay-color: #5200ff;
-  --work-grid-project-title-color: #ffffff;
-  --work-grid-project-category-color: #ffffff;
-  --hyperlink-color: #5200ff;
-  --hover-color: #111;
-  --visited-color: #5200ff;
-  --nav-link-main-color: #5200ff;
+  --body-text-color: #201a1a;
+  --body-typeface: "DM Sans", sans-serif;
+  --heading-typeface: "DM Sans", sans-serif;
+  --project-title-typeface: "DM Sans", sans-serif;
+  --background-color: #fdfbfb;
+  --background-color-about: #fdfbfb;
+  --background-color-footer: #fdfbfb;
+  --background-color-holding-page: #ff37ba;
+  --h1-color: #ff37ba;
+  --h2-color: #ff37ba;
+  --h3-color: #ff37ba;
+  --h4-color: #ff37ba;
+  --h5-color: #ff37ba;
+  --h6-color: #ff37ba;
+  --holding-page-title-color: #fdfbfb;
+  --accent-color: #ff37ba;
+  --highlight-color: #ff7e05;
+  --overlay-color: #ff37ba;
+  --work-grid-project-title-color: #fdfbfb;
+  --work-grid-project-category-color: #fdfbfb;
+  --hyperlink-color: #ff37ba;
+  --hover-color: #201a1a;
+  --visited-color: #ff37ba;
+  --nav-link-main-color: #ff37ba;
   --nav-link-main-color-hover: #321575;
-  --nav-arrow-color: #5200ff;
-  --nav-arrow-color-hover: #000;
-  --nav-arrow-stroke-color: #5200ff;
-  --nav-arrow-stroke-color-hover: #000;
-  --project-title-color: #5200ff;
-  --project-description-color: #222;
-  --project-sidebar-text-color: #222;
+  --nav-arrow-color: #ff37ba;
+  --nav-arrow-color-hover: #201a1a;
+  --nav-arrow-stroke-color: #ff37ba;
+  --nav-arrow-stroke-color-hover: #201a1a;
+  --project-title-color: #ff37ba;
+  --project-description-color: #937676;
+  --project-sidebar-text-color: #201a1a;
   --project-sidebar-background-color: orangered;
-  --project-description-background-color: #f5f5f5;
-  --full-width-section-background-color: #f5f5f5;
-  --project-details-background-color: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --project-description-background-color: #fdfbfb;
+  --full-width-section-background-color: #fdfbfb;
+  --project-details-background-color: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
   --work-sidebar-background-color: lemonchiffon;
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
-  --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --holding-page-footer-color: #fdfbfb;
+  --text-selection-background-color: #ff37ba;
+  --stroke-shadow-color: #201a1a;
 }
 
 body {
@@ -842,7 +848,12 @@ a.nav-link-main:hover {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
