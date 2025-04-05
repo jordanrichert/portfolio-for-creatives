@@ -380,16 +380,20 @@ a.nav-link-main:hover {
   display: flex;
   flex-direction: column;
 }
+
 .hero-header {
-  min-height: 6rem;
+  padding: 1.5rem;
 }
 
 .branding-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
   align-items: center;
+}
+
+.custom-navigation {
+  padding-left: 1rem;
 }
 
 .logo {
@@ -919,11 +923,8 @@ a.nav-link-main:hover {
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
-  .hero-headline-wrapper {
-    padding: 4rem 8rem;
-  }
-  .error-headline-wrapper {
-    padding: 4rem 8rem;
+  .hero-header {
+    padding: 1.5rem 2rem;
   }
 
   /* Work Page Grid for Large Devices */
