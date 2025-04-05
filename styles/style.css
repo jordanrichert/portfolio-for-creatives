@@ -506,7 +506,7 @@ a.nav-link-main:hover {
 .portfolio,
 .project-wrapper,
 .work-sidebar-wrapper {
-  padding: 0.5rem;
+  padding: 1.5rem;
 }
 
 /* Work Sidebar on Mobile */
@@ -910,6 +910,11 @@ a.nav-link-main:hover {
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
 
+  .logo {
+    width: 20rem;
+    /* TODO: Adjust the width of the logo on large devices here. */
+  }
+
   .custom-navigation {
     font-size: 1.2rem;
   }
@@ -944,13 +949,9 @@ a.nav-link-main:hover {
     width: 70%;
     padding: 1rem;
   }
-  .logo {
-    width: 20rem;
-    /* TODO: Adjust the width of the logo on large devices here. */
-  }
 
   .hero-header {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 3.5rem;
   }
 
   /* Work Page Grid for Large Devices */
@@ -976,7 +977,7 @@ a.nav-link-main:hover {
   .portfolio,
   .project-wrapper,
   .work-sidebar-wrapper {
-    padding: 1rem;
+    padding: 1.5rem 3.5rem;
   }
 
   /* Project Page Flex Direction on Large Devices */
