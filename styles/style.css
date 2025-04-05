@@ -109,7 +109,7 @@ select,
   --hyperlink-color: #ff37ba;
   --hover-color: #ff37ba;
   --visited-color: #ff37ba;
-  --nav-link-main-color: #ff37ba;
+  --nav-link-main-color: #201a1a;
   --nav-link-main-color-hover: #ff37ba;
   --nav-arrow-color: #ff37ba;
   --nav-arrow-color-hover: #201a1a;
@@ -343,6 +343,18 @@ a:active {
   /* Tap on mobile */
 }
 
+/* Override for header links */
+.header-links a:link,
+.header-links a:visited {
+  color: var(--nav-link-main-color);
+}
+
+.header-links a:hover,
+.header-links a:active {
+  color: var(--nav-link-main-color-hover);
+  text-decoration: underline;
+}
+
 /* Hyperlink Class Styles */
 
 a.nav-link-main {
@@ -403,6 +415,7 @@ a.nav-link-main:hover {
 
 .custom-navigation {
   padding-left: 1rem;
+  font-size: 1.2rem;
 }
 
 .logo {
@@ -933,7 +946,7 @@ a.nav-link-main:hover {
   }
 
   .hero-header {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 3rem;
   }
 
   /* Work Page Grid for Large Devices */
