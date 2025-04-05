@@ -495,6 +495,28 @@ a.nav-link-main:hover {
 
 */
 
+.masonry {
+  padding: 1.5rem;
+}
+
+.masonry-grid {
+  column-count: 1;
+  column-gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  padding-bottom: 2rem;
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .work-wrapper {
   flex: 1;
 }
@@ -875,6 +897,10 @@ a.nav-link-main:hover {
     padding-left: 1rem;
     font-size: 1.2rem;
   }
+
+  .masonry-grid {
+    column-count: 2;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -909,6 +935,10 @@ a.nav-link-main:hover {
 
   .hero-header {
     padding: 1.5rem 3.5rem;
+  }
+
+  .masonry-grid {
+    column-count: 3;
   }
 
   /* Work Page Grid for Large Devices */
