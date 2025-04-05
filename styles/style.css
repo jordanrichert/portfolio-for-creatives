@@ -52,9 +52,18 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+html,
+body,
+a,
+button,
+input,
+textarea,
+select,
+* {
   cursor: url("../assets/branding-images/jordanrichert-placeholdercursor.svg"),
     auto !important;
-  /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
 *,
