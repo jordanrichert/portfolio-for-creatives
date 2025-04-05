@@ -415,7 +415,7 @@ a.nav-link-main:hover {
 
 .custom-navigation {
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .logo {
@@ -909,6 +909,10 @@ a.nav-link-main:hover {
 
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
+
+  .custom-navigation {
+    font-size: 1.2rem;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
