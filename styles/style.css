@@ -520,17 +520,6 @@ a.nav-link-main:hover {
   padding: 1.5rem;
 }
 
-/* Work Sidebar on Mobile */
-.work-aside {
-  width: 100%;
-  background: var(--work-sidebar-background-color);
-}
-
-/* Main Work Area with Sidebar on Mobile */
-.work-details {
-  width: 100%;
-}
-
 /* Defining the work page grid */
 .grid {
   display: grid;
@@ -611,28 +600,19 @@ a.nav-link-main:hover {
                                            
 */
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
+.about-flex {
+  display: flex;
+  flex-direction: column;
   background: var(--background-color-about);
-  padding: 1rem;
   flex: 1;
+  padding: 1.5rem;
 }
 
-.about-grid-image {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.about-grid-text {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-grid-footer {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-bottom: 1.5rem;
 }
 
 /* Global Footer
@@ -899,6 +879,27 @@ a.nav-link-main:hover {
   .masonry-grid {
     column-count: 2;
   }
+
+  .about-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 1 1 50%;
+  }
+
+  .about-image {
+    padding: 0;
+    max-width: 600px;
+  }
+
+  .about-text {
+    padding-left: 1.5rem;
+    max-width: 900px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -937,6 +938,10 @@ a.nav-link-main:hover {
 
   .masonry-grid {
     column-count: 3;
+  }
+
+  .about-text {
+    padding-left: 3.5rem;
   }
 
   /* Work Page Grid for Large Devices */
@@ -1018,46 +1023,14 @@ a.nav-link-main:hover {
 
   /* About Page Grid for Large Devices */
 
-  .about-grid {
-    padding: 4rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-grid-image {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-  }
-  .about-grid-text {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-  }
-  .about-grid-footer {
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-    text-align: center;
-    align-self: end;
+  .about-flex {
+    padding: 1.5rem 3.5rem;
   }
 
   /* Footer Grid for Large Devices */
 
   .global-footer {
     padding: 1.5rem 3.5rem;
-  }
-
-  /* Work Sidebar on Large Devices */
-
-  .work-aside {
-    width: 25%;
-    height: 80vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1rem;
-  }
-
-  /* Main Work Area on Large Devices */
-
-  .work-details {
-    width: 75%;
   }
 }
 
