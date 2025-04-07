@@ -62,7 +62,8 @@ input,
 textarea,
 select,
 * {
-  cursor: url("../assets/branding-images/jordanrichert-cursor-web.png"), auto !important;
+  cursor: url("../assets/branding-images/jordanrichert-placeholdercursor.svg"),
+    auto !important;
 }
 
 *,
