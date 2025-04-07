@@ -111,10 +111,10 @@ select,
   --visited-color: #ff37ba;
   --nav-link-main-color: #201a1a;
   --nav-link-main-color-hover: #ff37ba;
-  --nav-arrow-color: #ff37ba;
-  --nav-arrow-color-hover: #201a1a;
-  --nav-arrow-stroke-color: #ff37ba;
-  --nav-arrow-stroke-color-hover: #201a1a;
+  --nav-arrow-color: #201a1a;
+  --nav-arrow-color-hover: #ff37ba;
+  --nav-arrow-stroke-color: #201a1a;
+  --nav-arrow-stroke-color-hover: #ff37ba;
   --project-title-color: #201a1a;
   --project-description-color: #201a1a;
   --project-sidebar-text-color: #201a1a;
@@ -712,7 +712,7 @@ a.nav-link-main:hover {
   display: flex;
   flex-direction: row;
   flex: 1;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
@@ -721,8 +721,9 @@ a.nav-link-main:hover {
 
 .arrow-left,
 .arrow-right {
-  width: 50%;
+  width: 20%;
 }
+
 .arrow-right {
   text-align: right;
 }
@@ -1026,11 +1027,7 @@ a.nav-link-main:hover {
   }
 
   .project-navigation {
-    justify-content: flex-start;
-  }
-
-  .arrow {
-    padding-right: 1rem;
+    justify-content: space-between;
   }
 
   /* About Page Grid for Large Devices */
