@@ -208,7 +208,7 @@ h1 {
   font-size: 2.2rem;
   font-family: var(--heading-typeface);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--h1-color);
 }
 
@@ -216,7 +216,7 @@ h2 {
   font-size: 2rem;
   font-family: var(--heading-typeface);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: var(--h2-color);
 }
 
@@ -621,6 +621,11 @@ a.nav-link-main:hover {
 
 .about-social-icon {
   padding-right: 0.5rem;
+}
+
+.about-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
 /* Global Footer
