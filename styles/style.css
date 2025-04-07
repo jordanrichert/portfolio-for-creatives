@@ -115,8 +115,8 @@ select,
   --nav-arrow-color-hover: #201a1a;
   --nav-arrow-stroke-color: #ff37ba;
   --nav-arrow-stroke-color-hover: #201a1a;
-  --project-title-color: #ff37ba;
-  --project-description-color: #937676;
+  --project-title-color: #201a1a;
+  --project-description-color: #201a1a;
   --project-sidebar-text-color: #201a1a;
   --project-sidebar-background-color: orangered;
   --project-description-background-color: #fdfbfb;
@@ -270,17 +270,16 @@ em {
 /* Class Styles */
 
 .project-title {
-  font-size: 3.625rem;
   font-family: var(--project-title-typeface);
   color: var(--project-title-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .project-description {
-  font-size: 1.225rem;
+  font-size: 0.75rem;
   line-height: 1.2;
   color: var(--project-description-color);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .h1-full-width {
@@ -518,6 +517,7 @@ a.nav-link-main:hover {
 .project-wrapper,
 .work-sidebar-wrapper {
   padding: 1.5rem;
+  align-items: center;
 }
 
 /* Defining the work page grid */
@@ -685,7 +685,7 @@ a.nav-link-main:hover {
 .work-sidebar-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .project-wrapper-full-width {
@@ -755,19 +755,13 @@ a.nav-link-main:hover {
 
 .project-image {
   width: 100%;
-  min-height: 40vh;
+  max-width: 70vh;
+  min-height: 60vh;
   /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
-}
-
-.project-details {
-  width: 100%;
-  padding: 1rem;
-  /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
-  background: var(--project-details-background-color);
 }
 
 .large-emoji-placeholder {
@@ -1005,7 +999,7 @@ a.nav-link-main:hover {
 
   .project-wrapper,
   .work-sidebar-wrapper {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   /* Project Full Width Styles */
@@ -1016,20 +1010,7 @@ a.nav-link-main:hover {
 
   /* Sidebar on Large Devices */
 
-  .project-aside {
-    width: 35%;
-    height: 75vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 8rem;
-    padding-right: 2rem;
-  }
-
   /* Main Project Image Area on Large Devices */
-
-  .project-details {
-    width: 65%;
-  }
 
   .project-image-container,
   .project-description-container {
