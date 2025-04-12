@@ -358,6 +358,7 @@ a.nav-link-main:hover {
 .navigation-arrow:link,
 .navigation-arrow:visited {
   color: var(--nav-arrow-color);
+  text-decoration: none;
 }
 
 .navigation-arrow:active,
