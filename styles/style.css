@@ -108,7 +108,7 @@ select,
   --work-grid-project-category-color: #fdfbfb;
   --hyperlink-color: #ff37ba;
   --hover-color: #ff37ba;
-  --visited-color: #ff37ba;
+  --visited-color: #201a1a;
   --nav-link-main-color: #201a1a;
   --nav-link-main-color-hover: #ff37ba;
   --nav-arrow-color: #201a1a;
@@ -363,18 +363,6 @@ a.nav-link-main:hover {
 .navigation-arrow:active,
 .navigation-arrow:hover {
   color: var(--nav-arrow-color-hover);
-}
-
-.stroke:link,
-.stroke:visited {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--nav-arrow-stroke-color);
-}
-
-.stroke:active,
-.stroke:hover {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--nav-arrow-stroke-color-hover);
 }
 
 /* Hero 
@@ -735,6 +723,16 @@ a.nav-link-main:hover {
 }
 
 /* Next Project and Previous Project Arrow Styles */
+
+a.project-navigation-item {
+  text-decoration: none;
+  padding: 1rem;
+}
+
+a.project-navigation-item:hover {
+  text-decoration: none;
+  padding: 1rem;
+}
 
 .arrow-left,
 .arrow-right {
