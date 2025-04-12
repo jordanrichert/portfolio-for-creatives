@@ -639,14 +639,14 @@ a.nav-link-main:hover {
 .about-services-experience {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   padding: 1.5rem;
 }
 
 .about-education-awards {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   padding: 1.5rem;
 }
 
@@ -991,6 +991,14 @@ a.nav-link-main:hover {
 
   .about-socials {
     padding-left: 3.5rem;
+  }
+
+  .about-services-experience {
+    padding: 1.5rem 3.5rem;
+  }
+
+  .about-education-awards {
+    padding: 1.5rem 3.5rem;
   }
 
   /* Work Page Grid for Large Devices */
