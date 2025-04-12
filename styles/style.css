@@ -108,7 +108,7 @@ select,
   --work-grid-project-category-color: #fdfbfb;
   --hyperlink-color: #ff37ba;
   --hover-color: #ff37ba;
-  --visited-color: #201a1a;
+  --visited-color: #ff37ba;
   --nav-link-main-color: #201a1a;
   --nav-link-main-color-hover: #ff37ba;
   --nav-arrow-color: #201a1a;
@@ -608,11 +608,28 @@ a.nav-link-main:hover {
 }
 
 .about-socials {
-  padding-top: 1.5rem;
+  display: flex;
+  padding: 1.5rem 0;
 }
 
-.about-social-icon {
-  padding-right: 0.5rem;
+.social-icon-about {
+  padding-right: 0.75rem;
+}
+
+a.social-icon-about {
+  color: #201a1a;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+a.social-icon-about:hover {
+  color: #ff37ba;
+  -webkit-transform: scale(1.15) rotate(4deg);
+  transform: scale(1.15) rotate(4deg);
 }
 
 .about-section li {
@@ -673,16 +690,24 @@ a.nav-link-main:hover {
   display: flex;
 }
 
-.social-icon {
+.social-icon-footer {
   padding-left: 0.75rem;
 }
 
-a.social-icon {
+a.social-icon-footer {
   color: #201a1a;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
 
-a.social-icon:hover {
+a.social-icon-footer:hover {
   color: #ff37ba;
+  -webkit-transform: scale(1.15) rotate(4deg);
+  transform: scale(1.15) rotate(4deg);
 }
 
 /* Project Page 
@@ -997,7 +1022,7 @@ a.project-navigation-item:hover {
   }
 
   .about-socials {
-    padding-left: 3.5rem;
+    padding: 1rem 3.5rem;
   }
 
   .about-services-experience {
