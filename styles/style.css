@@ -674,7 +674,15 @@ a.nav-link-main:hover {
 }
 
 .social-icon {
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
+}
+
+a.social-icon {
+  color: #201a1a;
+}
+
+a.social-icon:hover {
+  color: #ff37ba;
 }
 
 /* Project Page 
