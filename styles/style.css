@@ -399,19 +399,25 @@ a.nav-link-main:hover {
 
 .branding-navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .custom-navigation {
-  padding-left: 0.5rem;
-  font-size: 1rem;
+  padding-left: 1rem;
+  font-size: 1.1rem;
 }
 
 .logo {
-  width: 16rem;
+  width: 20rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
+}
+
+.navigation-links {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
 }
 
 .hero-headline-wrapper {
@@ -944,13 +950,24 @@ a.project-navigation-item:hover {
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
 
+  .branding-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation-links {
+    padding-top: 1rem;
+  }
+
   .logo {
-    width: 20rem;
+    width: 24rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
   .custom-navigation {
-    padding-left: 1rem;
+    padding-left: 3rem;
     font-size: 1.2rem;
   }
 
