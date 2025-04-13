@@ -980,8 +980,31 @@ a.project-navigation-item:hover {
   .about-under {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .about-services-experience {
+    padding-right: 9vw;
+  }
+
+  .about-education-awards {
+    padding-left: 9vw;
+  }
+}
+
+/* Medium-large devices (tablets, 880px and up) */
+
+@media (min-width: 880px) {
+  /* TODO: Add styles here for medium devices. */
+
+  .about-services-experience {
+    padding-right: 13vw;
+  }
+
+  .about-education-awards {
+    padding-left: 13vw;
   }
 }
 
@@ -1029,6 +1052,14 @@ a.project-navigation-item:hover {
 
   .about-socials {
     padding: 1rem 3.5rem;
+  }
+
+  .about-services-experience {
+    padding-right: 15vw;
+  }
+
+  .about-education-awards {
+    padding-left: 15vw;
   }
 
   /* Work Page Grid for Large Devices */
@@ -1109,6 +1140,14 @@ a.project-navigation-item:hover {
 @media (min-width: 1200px) {
   /* TODO: Add styles here for X-large devices. */
 
+  .about-services-experience {
+    padding-right: 18vw;
+  }
+
+  .about-education-awards {
+    padding-left: 18vw;
+  }
+
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
@@ -1118,6 +1157,14 @@ a.project-navigation-item:hover {
 
 @media (min-width: 1400px) {
   /* TODO: Add styles here for XX-large devices. */
+
+  .about-services-experience {
+    padding-right: 22vw;
+  }
+
+  .about-education-awards {
+    padding-left: 20vw;
+  }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
