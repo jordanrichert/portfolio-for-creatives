@@ -223,7 +223,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.325rem;
+  font-size: 1.45rem;
   font-weight: 500;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -592,12 +592,15 @@ a.nav-link-main:hover {
                                            
 */
 
+.about-wrapper {
+  padding: 1.5rem;
+}
+
 .about-flex {
   display: flex;
   flex-direction: column;
   background: var(--background-color-about);
   flex: 1;
-  padding: 1.5rem;
 }
 
 .about-image img {
@@ -632,6 +635,10 @@ a.social-icon-about:hover {
   transform: scale(1.15) rotate(4deg);
 }
 
+.about-section {
+  margin-top: 1rem;
+}
+
 .about-section li {
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -645,15 +652,13 @@ a.social-icon-about:hover {
 .about-services-experience {
   display: flex;
   flex-direction: column;
-  justify-content: top;
-  padding: 1.5rem;
+  justify-content: flex-start;
 }
 
 .about-education-awards {
   display: flex;
   flex-direction: column;
-  justify-content: top;
-  padding: 1.5rem;
+  justify-content: flex-start;
 }
 
 /* Global Footer
@@ -975,7 +980,8 @@ a.project-navigation-item:hover {
   .about-under {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1.5rem 3.5rem;
   }
 }
 
@@ -1023,14 +1029,6 @@ a.project-navigation-item:hover {
 
   .about-socials {
     padding: 1rem 3.5rem;
-  }
-
-  .about-services-experience {
-    padding: 1.5rem 3.5rem;
-  }
-
-  .about-education-awards {
-    padding: 1.5rem 3.5rem;
   }
 
   /* Work Page Grid for Large Devices */
@@ -1095,7 +1093,7 @@ a.project-navigation-item:hover {
 
   /* About Page Grid for Large Devices */
 
-  .about-flex {
+  .about-wrapper {
     padding: 1.5rem 3.5rem;
   }
 
