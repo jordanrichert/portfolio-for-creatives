@@ -250,7 +250,8 @@ h4 {
 h5 {
   font-size: 1.1rem;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
   color: var(--h5-color);
 }
 
@@ -737,6 +738,10 @@ a.social-icon-footer:hover {
   margin-bottom: 2rem;
 }
 
+.project-info {
+  align-self: flex-start;
+}
+
 .project-details {
   justify-content: center;
 }
@@ -924,12 +929,12 @@ a.project-navigation-item:hover {
     font-size: 1.2rem;
   }
 
-  .masonry-grid {
-    column-count: 2;
+  .project-info {
+    max-width: 700px;
   }
 
-  .project-description {
-    max-width: 40vw;
+  .masonry-grid {
+    column-count: 2;
   }
 
   .about-flex {
