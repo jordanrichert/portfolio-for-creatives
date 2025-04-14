@@ -743,7 +743,7 @@ a.social-icon-footer:hover {
 }
 
 .project-details {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* Previous/Next Arrow Styles */
