@@ -406,7 +406,7 @@ a.nav-link-main:hover {
 }
 
 .logo {
-  width: 20rem;
+  width: 16rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -920,7 +920,7 @@ a.project-navigation-item:hover {
   }
 
   .logo {
-    width: 24rem;
+    width: 20rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
