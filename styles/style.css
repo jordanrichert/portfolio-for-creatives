@@ -161,7 +161,7 @@ svg {
   height: auto;
   vertical-align: top;
   /* Removes the gap/space in inline elements for text descenders. */
-  object-fit: contain;
+  object-fit: cover;
   /* This is optional. Also try cover or leave out entirely. */
 }
 
@@ -769,11 +769,6 @@ a.project-navigation-item:hover {
   padding: 1rem;
 }
 
-.arrow-left,
-.arrow-right {
-  width: 20%;
-}
-
 .arrow-right {
   text-align: right;
 }
@@ -782,13 +777,6 @@ a.project-navigation-item:hover {
   padding: 0;
 }
 
-.project-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
 .project-description-container {
   display: flex;
   align-items: flex-start;
@@ -804,20 +792,19 @@ a.project-navigation-item:hover {
   padding: 1rem;
 }
 
-.project-image {
-  width: 100%;
-  max-width: 70vh;
-  min-height: 60vh;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
+.project-image-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  flex-direction: column;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
+.project-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 /*
