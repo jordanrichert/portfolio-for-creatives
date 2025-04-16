@@ -820,6 +820,10 @@ a.project-navigation-item:hover {
   object-fit: cover;
 }
 
+.vertical-image {
+  width: 100%;
+}
+
 /*
 
 ██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
@@ -1133,5 +1137,9 @@ a.play-image:hover img {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .vertical-image {
+    width: 60%;
   }
 }
