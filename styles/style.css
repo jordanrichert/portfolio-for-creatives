@@ -811,7 +811,6 @@ a.project-navigation-item:hover {
   flex: 1;
   margin-bottom: 0; /* Remove default margin to align properly in flex */
   overflow: hidden;
-  aspect-ratio: 3 / 4; /* or use a fixed height */
 }
 
 .image-pair img {
