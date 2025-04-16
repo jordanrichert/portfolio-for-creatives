@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <title>Jordan Richert | Portfolio | Play Page</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/branding-images/jordanrichert-favicon.png"
+    />
     <meta
       name="description"
       content="Jordan Richert is a designer, illustrator, and art director based in Vancouver, BC who navigates the world with creative thinking and a handful of birdseed."
@@ -21,14 +26,144 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
   </head>
 
-  <body class="play-page">
-    <div class="play-page-wrapper">
-      <div class="play-page-inner-container">
-        <h1 class="play-page-title">Play</h1>
-        <p>Consider adding a play page. Replace this with your own.</p>
+  <body class="work-page">
+    <header class="header header-links">
+      <ul class="branding-navigation">
+        <li class="logo">
+          <a href="index.html"
+            ><img
+              src="assets/branding-images/jordanrichert-wordmark-web.svg"
+              alt="Jordan Richert's wordmark linking to the work page."
+          /></a>
+        </li>
+        <div class="navigation-links">
+          <li>
+            <a href="index.html" class="custom-navigation">Work</a>
+          </li>
+          <li><a href="play.html" class="custom-navigation">Play</a></li>
+          <li><a href="about.html" class="custom-navigation">About</a></li>
+        </div>
+      </ul>
+    </header>
+
+    <main class="work-wrapper">
+      <section class="portfolio masonry">
+        <ul class="masonry-grid">
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-1.jpg"
+              data-lightbox="play-1"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-1.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-2.jpg"
+              data-lightbox="play-2"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-2.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-3.jpg"
+              data-lightbox="play-3"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-3.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-4.jpg"
+              data-lightbox="play-4"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-4.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-5.jpg"
+              data-lightbox="play-5"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-5.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="masonry-item">
+            <a
+              href="assets/branding-images/project-6.jpg"
+              data-lightbox="play-6"
+              class="play-image"
+            >
+              <figure>
+                <img
+                  src="assets/branding-images/project-6.jpg"
+                  alt="A description of the image"
+                />
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="global-footer">
+      <div class="divider"></div>
+      <div class="footer-content">
+        <p class="fineprint">&copy; 2025 Jordan Richert</p>
+        <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/jrdnrichert/"
+            class="social-icon-footer"
+            ><i
+              class="fa-brands fa-linkedin fa-2x"
+              alt="Hyperlink to Jordan Richert's LinkedIn profile."
+            ></i
+          ></a>
+          <a
+            href="https://www.instagram.com/jordanrichert/"
+            class="social-icon-footer"
+            ><i
+              class="fa-brands fa-square-instagram fa-2x"
+              alt="Hyperlink to @jordanrichert on Instagram."
+            ></i
+          ></a>
+        </div>
       </div>
-    </div>
+    </footer>
+    <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
   </body>
 </html>
