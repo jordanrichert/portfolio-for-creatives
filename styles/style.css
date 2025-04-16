@@ -382,14 +382,15 @@ a.nav-link-main:hover {
                                  
 */
 
-.hero {
+.header {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.hero-header {
   padding: 1.5rem;
+  background-color: #fdfbfbbc;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Make sure it stays above everything */
 }
 
 .branding-navigation {
@@ -1017,7 +1018,7 @@ a.project-navigation-item:hover {
     padding: 1rem;
   }
 
-  .hero-header {
+  .header {
     padding: 1.5rem 3.5rem;
   }
 
