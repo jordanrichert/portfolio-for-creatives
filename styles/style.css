@@ -160,9 +160,7 @@ svg {
   max-width: 100%;
   height: auto;
   vertical-align: top;
-  /* Removes the gap/space in inline elements for text descenders. */
   object-fit: cover;
-  /* This is optional. Also try cover or leave out entirely. */
 }
 
 .centered-text {
@@ -406,7 +404,7 @@ a.nav-link-main:hover {
 }
 
 .logo {
-  width: 16rem;
+  width: 18rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -792,19 +790,33 @@ a.project-navigation-item:hover {
   padding: 1rem;
 }
 
-.project-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .project-image {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
+}
+
+.image-pair {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-direction: column; /* Default to stacked on mobile */
+  width: 100%;
+}
+
+.image-pair .project-image {
+  flex: 1;
+  margin-bottom: 0; /* Remove default margin to align properly in flex */
+  overflow: hidden;
+  aspect-ratio: 3 / 4; /* or use a fixed height */
+}
+
+.image-pair img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*
@@ -918,6 +930,10 @@ a.project-navigation-item:hover {
 
   .project-info {
     max-width: 700px;
+  }
+
+  .image-pair {
+    flex-direction: row; /* Side-by-side on tablet and up */
   }
 
   .masonry-grid {
