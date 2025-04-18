@@ -860,10 +860,6 @@ a.project-navigation-item:hover {
 
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
-.full-height {
-  height: 100vh;
-}
-
 .error-page {
   display: flex;
   padding: 1.5rem;
