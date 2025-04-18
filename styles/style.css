@@ -534,13 +534,6 @@ a.nav-link-main:hover {
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
-.work-page-grid-item {
-  width: 100%;
-  height: auto;
-  position: relative;
-  /* Required to contain overlay size */
-}
-
 /* Overlay */
 .overlay-container {
   position: relative;
@@ -867,20 +860,27 @@ a.project-navigation-item:hover {
 
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
-.error-headline-wrapper {
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-  margin: 0 auto;
+.full-height {
+  height: 100vh;
 }
 
-.error-page-animation {
-  width: 25rem;
+.error-page {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  height: 70vh;
+}
+
+.error-image {
+  width: 30vw;
+  align-self: center;
+}
+
+.return-home {
+  padding: 1.5rem;
 }
 
 /*
@@ -922,6 +922,14 @@ a.play-image:hover img {
 
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
+
+  .error-image {
+    width: 15vw;
+  }
+
+  .error-page {
+    font-size: 1.2rem;
+  }
 
   .branding-navigation {
     display: flex;
@@ -1008,10 +1016,6 @@ a.play-image:hover img {
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
-  .holding-page-title {
-    font-size: 2rem;
-  }
-
   h1 {
     font-size: 4.275rem;
   }
@@ -1031,6 +1035,10 @@ a.play-image:hover img {
   .h2-full-width {
     width: 70%;
     padding: 1rem;
+  }
+
+  .error-page {
+    padding: 1.5rem 3.5rem;
   }
 
   .header {
@@ -1062,17 +1070,6 @@ a.play-image:hover img {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1rem;
-  }
-
-  /* Grayscale filter with full-colour on hover and tap */
-
-  .work-page-grid-item a.grayscale img {
-    filter: grayscale(100);
-  }
-
-  .work-page-grid-item > a.grayscale:active img,
-  .work-page-grid-item > a.grayscale:hover img {
-    filter: grayscale(0);
   }
 
   /* Padding around work grid and project page */
