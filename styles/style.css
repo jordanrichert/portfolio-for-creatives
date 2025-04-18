@@ -605,6 +605,17 @@ a.nav-link-main:hover {
   height: auto;
   display: block;
   padding-bottom: 3.5rem;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.about-image:hover img {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
 .about-socials {
