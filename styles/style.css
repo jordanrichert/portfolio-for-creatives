@@ -171,27 +171,6 @@ svg {
   margin-bottom: 1rem;
 }
 
-/* Embedded Video Styles */
-
-.project-video-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  margin-bottom: 1rem;
-}
-
-/* iframe to fit in the container div with full height and width */
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .responsive-nav {
   display: flex;
   flex-direction: row;
@@ -677,15 +656,6 @@ a.social-icon-footer:hover {
   justify-content: center;
 }
 
-.project-wrapper-full-width {
-  width: 100%;
-  padding: 1rem;
-}
-.project-full-width {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
 .project-info {
   align-self: flex-start;
 }
@@ -747,6 +717,7 @@ a.project-navigation-item:hover {
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
+  overflow: hidden;
 }
 
 .image-pair {
@@ -763,16 +734,40 @@ a.project-navigation-item:hover {
   overflow: hidden;
 }
 
-.image-pair img {
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* You don't need to re-declare iframe size here — it's handled in .video-container */
+.project-image iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .vertical-image {
-  width: 100%;
+  aspect-ratio: 3 / 4;
 }
 
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 133.33%; /* 3 / 4 aspect ratio (4 / 3 = 1.3333) */
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  pointer-events: none;
+}
 /*
 
 ██████  ██       ██████   ██████      ██ ██████  ███████ ███████ ██    ██ ███    ███ ███████ 
@@ -1022,21 +1017,6 @@ a.play-image:hover img {
   .project-wrapper,
   .work-sidebar-wrapper {
     flex-direction: column;
-  }
-
-  /* Project Full Width Styles */
-
-  .project-wrapper-full-width {
-    padding: 1rem 4rem;
-  }
-
-  /* Sidebar on Large Devices */
-
-  /* Main Project Image Area on Large Devices */
-
-  .project-image-container,
-  .project-description-container {
-    flex-direction: row;
   }
 
   .section-container {
