@@ -290,6 +290,10 @@ em {
   margin-bottom: 1.5rem;
 }
 
+.extra-space {
+  margin-bottom: 3rem;
+}
+
 .h1-full-width {
   width: 100%;
   padding: 1rem;
@@ -382,14 +386,20 @@ a.nav-link-main:hover {
                                  
 */
 
+.site-wrapper {
+  padding: 0 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
   background-color: #fdfbfbbc;
   position: sticky;
   top: 0;
+  padding: 1.5rem 0;
   z-index: 1000; /* Make sure it stays above everything */
 }
 
@@ -416,69 +426,8 @@ a.nav-link-main:hover {
   gap: 1.2rem;
 }
 
-.hero-headline-wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-}
-
 .hero-icon {
   font-size: 4rem;
-}
-
-/*
-
- ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████ 
-██      ██    ██ ████  ████ ██   ██ ██    ██ ████   ██ ██      ████   ██    ██    ██      
-██      ██    ██ ██ ████ ██ ██████  ██    ██ ██ ██  ██ █████   ██ ██  ██    ██    ███████ 
-██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██ 
- ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████ 
-                                                                                          
-*/
-
-/* Components */
-
-.full-width-section {
-  width: 100%;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: var(--full-width-section-background-color);
-  margin-bottom: 1rem;
-}
-
-.full-width-headline-wrapper {
-  width: 100%;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  text-align: center;
-}
-
-.section-container {
-  width: 100%;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.section-item {
-  padding: 1rem;
-  margin: 1rem;
-  min-height: 60vh;
 }
 
 /* Work Page Layout
@@ -490,10 +439,6 @@ a.nav-link-main:hover {
  ███ ███   ██████  ██   ██ ██   ██     ██      ██   ██  ██████  ███████ 
 
 */
-
-.masonry {
-  padding: 1.5rem;
-}
 
 .masonry-grid {
   column-count: 1;
@@ -522,7 +467,7 @@ a.nav-link-main:hover {
 .project-wrapper,
 .work-sidebar-wrapper {
   display: flex;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   align-items: center;
 }
 
@@ -674,7 +619,7 @@ a.social-icon-about:hover {
 
 .global-footer {
   background: var(--background-color-footer);
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .divider {
@@ -919,6 +864,10 @@ a.play-image:hover img {
 @media (min-width: 768px) {
   /* TODO: Add styles here for medium devices. */
 
+  .site-wrapper {
+    padding: 0 3rem;
+  }
+
   .error-image {
     width: 15vw;
   }
@@ -949,7 +898,7 @@ a.play-image:hover img {
   }
 
   .project-info {
-    max-width: 750px;
+    max-width: 850px;
   }
 
   .image-pair {
@@ -1012,6 +961,10 @@ a.play-image:hover img {
 @media (min-width: 992px) {
   /* TODO: Add or adjust styles here for large devices. */
 
+  .site-wrapper {
+    padding: 0 5rem;
+  }
+
   h1 {
     font-size: 4.275rem;
   }
@@ -1024,20 +977,7 @@ a.play-image:hover img {
     font-size: 1.625rem;
   }
 
-  .h1-full-width {
-    width: 70%;
-    padding: 1rem;
-  }
-  .h2-full-width {
-    width: 70%;
-    padding: 1rem;
-  }
-
   .error-page {
-    padding: 1.5rem 3.5rem;
-  }
-
-  .header {
     padding: 1.5rem 3.5rem;
   }
 
@@ -1073,7 +1013,7 @@ a.play-image:hover img {
   .portfolio,
   .project-wrapper,
   .work-sidebar-wrapper {
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 0;
   }
 
   /* Project Page Flex Direction on Large Devices */
@@ -1113,13 +1053,13 @@ a.play-image:hover img {
   /* About Page Grid for Large Devices */
 
   .about-wrapper {
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 0;
   }
 
   /* Footer Grid for Large Devices */
 
   .global-footer {
-    padding: 1.5rem 3.5rem;
+    padding: 1.5rem 0;
   }
 }
 

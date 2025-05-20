@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Responsive Nav &middot; Public Events Demo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../../responsive-nav.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../../responsive-nav.css" />
     <script src="../../responsive-nav.js"></script>
   </head>
-  <body>
-
+  <body class="site-wrapper">
     <nav class="nav-collapse">
       <ul>
         <li><a href="#">Home</a></li>
@@ -25,46 +24,63 @@
     <button id="resize">Call resize method manually</button>
 
     <script>
-
       // Init Responsive Nav
       var nav = responsiveNav(".nav-collapse");
 
       // Toggle Nav
       var toggle = document.getElementById("toggle");
-      toggle.addEventListener("click", function (e) {
-        e.preventDefault();
-        nav.toggle();
-      }, false);
+      toggle.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          nav.toggle();
+        },
+        false
+      );
 
       // Open Nav
       var open = document.getElementById("open");
-      open.addEventListener("click", function (e) {
-        e.preventDefault();
-        nav.open();
-      }, false);
+      open.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          nav.open();
+        },
+        false
+      );
 
       // Close Nav
       var close = document.getElementById("close");
-      close.addEventListener("click", function (e) {
-        e.preventDefault();
-        nav.close();
-      }, false);
+      close.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          nav.close();
+        },
+        false
+      );
 
       // Destroy Nav
       var destroy = document.getElementById("destroy");
-      destroy.addEventListener("click", function (e) {
-        e.preventDefault();
-        nav.destroy();
-      }, false);
+      destroy.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          nav.destroy();
+        },
+        false
+      );
 
       // Call Resize method manually
       var resize = document.getElementById("resize");
-      resize.addEventListener("click", function (e) {
-        e.preventDefault();
-        nav.resize();
-      }, false);
-
+      resize.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          nav.resize();
+        },
+        false
+      );
     </script>
-
   </body>
 </html>
