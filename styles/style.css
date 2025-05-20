@@ -703,6 +703,7 @@ a.social-icon-footer:hover {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 1.5rem;
 }
 
 /* Next Project and Previous Project Arrow Styles */
