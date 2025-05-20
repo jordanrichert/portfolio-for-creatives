@@ -619,7 +619,7 @@ a.social-icon-about:hover {
 
 .global-footer {
   background: var(--background-color-footer);
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
 }
 
 .divider {
@@ -1054,12 +1054,6 @@ a.play-image:hover img {
   /* About Page Grid for Large Devices */
 
   .about-wrapper {
-    padding: 1.5rem 0;
-  }
-
-  /* Footer Grid for Large Devices */
-
-  .global-footer {
     padding: 1.5rem 0;
   }
 }
